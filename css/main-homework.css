@@ -1,0 +1,598 @@
+body{
+    margin: 0;
+    height: 3000px;
+    color: black;
+    position: relative;
+}
+
+.top {
+    background-color: rgb(205, 204, 204);
+    
+    height: 30px;
+    position: relative;
+    display: flex;
+    }
+.top .inner{
+    
+    
+    align-items: center;
+    display : flex;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top .inner img {
+    width: 20px;
+    height: 20px;
+    /* overflow: hidden; */
+    display: block;
+    margin-right: 10px;
+}
+
+.top .texture {
+    font-size: 14px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+height: 160px;
+/* background-color: yellow; */
+}
+.header .inner {
+    
+    height: 100px;
+    
+    /* background-color: aqua; */
+    position: relative;
+    
+    
+}
+
+
+.header .inner .logo img {
+    display: block;
+    cursor: pointer;
+
+}
+
+.header .inner .logo img:active {
+    border: 2px dashed black;
+   
+}
+
+.header .inner .logo {
+    /* width: 200px; */
+    /* height: 100px; */
+    /* background-color: blue; */
+    /* background-image: url("../image/logo.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+
+    position: absolute;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    
+    align-content: center;
+    
+    
+}
+
+.header .inner .sub-menu1 {
+    display: flex;
+    /* background-color: rgb(75, 103, 94); */
+    position:absolute;
+    top:0;
+    right: 0;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+
+    
+    margin-top: 0;
+    z-index: 1;
+
+}
+
+
+
+
+.header .inner ul{
+    list-style-type: none;
+}
+
+
+/* .header .inner .sub-menu1 .name:hover { 
+     
+}*/
+
+.header .inner .sub-menu1 li{
+    position: relative;
+    
+}
+
+.header .inner .sub-menu1 li:hover .inner-wrap {
+    background-color: rgb(152, 150, 150);
+}
+
+.header .inner .sub-menu1 li:nth-child(1){
+   width: 113.81px;
+     
+}
+.header .inner .sub-menu1 li:nth-child(2){
+    width:81.41px;
+}
+.header .inner .sub-menu1 li:nth-child(3){
+    width:67.61px;
+}
+.header .inner .sub-menu1 li:nth-child(4){
+    width:95.2px
+}
+/* 5px 빼면 될 듯 */
+
+.header .inner .sub-menu1 li img {
+    position: relative;
+    bottom: -4px;
+    width: 20px;
+    
+    
+}
+
+
+.header .inner .sub-menu1 li .name {
+    margin-right: 0px;
+   
+    cursor: pointer;
+
+    position: relative;
+
+    width: 100%;
+    display: inline-block;
+
+   box-sizing: border-box;
+   height: 24px;
+     
+}
+ .header .inner .sub-menu1 li .inner-wrap {
+    display: inline-flex;
+    align-items: center;
+} 
+
+.header .inner .sub-menu1 li:active .name .inner-wrap {
+    outline: 2px dashed rgb(51, 23, 191);
+    outline-offset: -1px;
+    transition-duration: .3s;
+}
+
+.header .inner .sub-menu1 .name::before {
+    content: "";
+    position: absolute;
+    left: -12.5px;
+    top:  5px;
+    width: 2px;
+    height: 70%;
+    background-color: black;
+    margin-right: 10px;
+    
+}
+
+.header .inner .sub-menu1 li .contents {
+    display: none;
+    margin: 20px 0 0 0;
+    background-color: white;
+    border-style: groove;
+    list-style-type: none;
+    border: 1 groove rgb(110, 107, 107);
+    z-index: 2;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+
+   
+}
+
+.header .inner .sub-menu1 li .contents ul {
+    
+    box-sizing: border-box;
+    padding-left: 0;
+    
+    
+    }
+    
+
+.header .inner .sub-menu1 li .contents ul li {
+    white-space: nowrap;
+    padding-left: 10px;
+        
+}
+.header .inner .sub-menu1 li:nth-child(1) .contents ul{
+    width: 110px;
+}
+.header .inner .sub-menu1 li:nth-child(3) .contents ul{
+    width: 160px;
+    
+}
+.header .inner .sub-menu1 li:nth-child(4) .contents ul{
+    width: 140px; 
+    
+}
+
+
+
+.header .inner .sub-menu1 li:nth-child(4) .contents ul li:nth-child(6){
+    justify-content: center;
+    padding-left: 0;
+    
+}
+
+
+.header .inner .sub-menu1 li .contents li:hover .inner-wrap{
+    background-color:rgb(152, 150, 150) ;
+    cursor: pointer;
+    outline: ;
+} 
+
+ /* .header .inner .sub-menu1 li .contents li div:hover { 
+    background-color:rgb(152, 150, 150) ;
+    cursor: pointer;
+} */
+
+
+.header .inner .sub-menu1 li .contents img {
+    width: 20px;
+}
+
+.header .inner .sub-menu1 li:active .contents{
+    display: block;
+    
+    
+}
+
+
+
+/* .header .inner .sub-menu1 li:active .name { 
+    outline: 2px dashed rgb(51, 23, 191);
+    outline-offset: -1px;
+    transition-duration: .3s;
+    text-decoration: underline;
+    
+}*/
+
+.header .inner .sub-menu1 > li:first-child {
+    border: none;
+}
+
+.header .inner .sub-menu1 .contents div{
+    
+    border-top: 1px solid black;
+}
+
+.header .inner .sub-menu1 .contents div {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header .inner .sub-menu1 .contents span {
+    border: 1px solid rgb(78, 77, 77);
+    border-radius: 3px;
+    margin-right: 3px;
+}
+
+.header .inner .sub-menu1 li:nth-child(3) .contents{
+    font-size: 18px;
+    
+}
+
+
+
+.header .inner .sub-menu1 li:nth-child(4) .contents ul li{
+   display: flex;
+   align-items: center;
+    
+}
+
+.header .inner .sub-menu1 li:nth-child(4) .contents{
+    font-size: 18px;
+    
+}
+
+.header .inner .sub-menu1 li:nth-child(4) .contents li:nth-child(6)  {
+    
+    text-align: center;
+    border-top: 1px solid gray;
+}
+
+.header .inner .sub-menu1 li:nth-child(4) .contents li:nth-child(1) span {
+    font-size:15px ;
+}
+.header .inner .sub-menu1 li:nth-child(4) .contents li:nth-child(2) span {
+    font-size:18px
+}
+.header .inner .sub-menu1 li:nth-child(4) .contents li:nth-child(3) span {
+    font-size:22px
+}
+.header .inner .sub-menu1 li:nth-child(4) .contents li:nth-child(4) span {
+    font-size:26px
+}
+.header .inner .sub-menu1 li:nth-child(4) .contents li:nth-child(5) span {
+    font-size:30px
+}
+
+
+
+.header .inner .sub-menu1 li .contents  li {
+    margin: 7px 5px;
+}
+
+
+.header .inner .sub-menu2 {
+    display: flex;
+    /* background-color: brown; */
+    position:absolute;
+    bottom:0;
+    right: 0;
+
+    padding: 10px 10px 10px 20px;
+    /* height: 50%; */
+
+    margin-bottom: 0;
+
+    font-size: 17px;
+    font-weight: 700;
+
+}
+
+.header .inner .sub-menu2 li {
+    margin-right: 20px;
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.header .inner .sub-menu2 li:hover {
+    background-color: rgb(152, 150, 150);
+}
+
+ .header .inner .sub-menu2 li:active { 
+    outline: 2px dashed black;
+
+}
+
+.header .inner .sub-menu2 li img {
+    /* background-color: yellow; */
+    /* margin: auto 0; */
+    position: relative;
+    bottom: -4px;
+   
+    
+    
+    
+}
+
+.header .head-menu {
+    background-color: white;
+    border-bottom: groove ;
+    border-top: groove ;
+    margin-top: 0;
+    height: 60px;
+}
+
+.header .head-menu .inner {
+    width: 1200px;
+
+}
+
+.header .head-menu .inner .main-menu {
+    
+         /* position: relative; */
+    padding-left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+
+
+
+
+
+.header  .head-menu .inner .main-menu img {
+        position: relative;
+    bottom: -4px;
+    width: 24px;
+    
+}
+
+.header  .inner .main-menu li .name:hover {
+    background-color: rgb(152, 150, 150);
+    cursor: pointer;
+}
+
+
+.header .head-menu .inner .main-menu li .name{
+
+    font-size: 19px;
+    font-weight: 700;
+    
+    height: 60px;
+    /* height는 content와 padding 만 포함. border를 포함 안 한다.
+    .header .head-menu .inner .main-menu li .name:active 에서
+    border 옵션 포함시,  border 가 아래쪽이 안 보일 수가 있다.
+    이경우     box-sizing: border-box; 넣어서 border가 모두 보이게 할 수 있다.
+      */
+    box-sizing: border-box;
+
+    align-content: center;
+
+    margin-right: 20px;
+
+    
+
+}
+.header .head-menu .inner .main-menu li .name:active{
+    border: 3px dashed black;
+    text-decoration: underline;
+}
+
+.header .head-menu .inner .main-menu li:active .contents {
+    display: block;
+}
+
+.header .head-menu .inner .main-menu li:active .name >img{
+    transform: rotate(180deg);
+}
+
+.header .head-menu .inner .main-menu li .contents{
+    
+    display: none;
+    background-color: white;
+    z-index: 2;
+
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 1200px;
+
+    
+}
+.header .head-menu .inner .main-menu li .contents ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0;
+}
+.header .head-menu .inner .main-menu li .contents ul li {
+    
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 2%;
+    width: 23%;
+    font-size: 19px;
+    /* padding: 15px 0 15px; */
+
+    position: relative;
+    
+}
+
+
+
+.header .head-menu .inner .main-menu li .contents .simple {
+    background-color: rgb(129, 126, 126);
+    border-radius: 10px;
+    padding-left: 20px;
+    line-height: 2;
+}
+.header .head-menu .inner .main-menu li .contents h4 {
+    display: block;
+    position: relative;
+    padding: 4px 4px 20px 4px;
+    
+    
+}
+.header .head-menu .inner .main-menu li .contents h4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(129, 126, 126);
+    margin-bottom: 4px;
+    
+}
+
+.search {
+    margin-top: 10px;
+    height: 50px;
+
+}
+
+.search .search-box {
+    border: 2px solid royalblue;
+    border-radius: 8px;
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    position: relative;
+    
+}
+.search .search-box > input {
+    width: 1200px;
+    height: 100%;
+    /* border: none; */
+    font-size: 20px;
+    padding: 0 50px 0 0;
+
+}
+
+.search .search-box > input:active {
+    border: none;
+}
+
+.search .search-box span {
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    
+}
+
+.picture1 {
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.picture1 .picture-p1 {
+    position: absolute;
+    margin: 0 auto;
+    width: 1200px;
+    height: 700px;
+
+    background-image: url("/image/MB_20250327.png");
+    background-size: contain;
+
+}
+
+@media (max-width: 900px) {
+    .top {
+        display: none;
+    
+    }
+    .header .inner .sub-menu1{
+        display: none;
+    }
+    .header .inner .sub-menu2 {
+        display: none;
+    }
+    .header .head-menu {
+        display: none;
+
+        
+    }
+    .header .inner .logo {
+        
+
+    }
+    .header .inner .logo img{
+        width: 95px;
+        height: 45px;
+    }
+    .header {
+        height: 80px;
+        border-bottom: 1px groove gray;
+    }
+
+}
